@@ -12,12 +12,16 @@
 [![Downloads](https://img.shields.io/github/downloads/RomanovCaesar/m-ui/total.svg)](https://github.com/RomanovCaesar/m-ui/releases/latest)
 [![License](https://img.shields.io/github/license/RomanovCaesar/m-ui.svg)](https://github.com/RomanovCaesar/m-ui/blob/main/LICENSE)
 
-Um painel de gerenciamento de servidores baseado no [Mihomo](https://github.com/MetaCubeX/mihomo). O fluxo de trabalho segue o 3x-ui, a interface segue o design Liquid Glass da Apple e o modelo de configuração é o YAML nativo do Mihomo. O painel está disponível em 11 idiomas.
+Um painel de gerenciamento de servidores baseado no [Mihomo](https://github.com/MetaCubeX/mihomo). O fluxo de trabalho segue o 3x-ui, a interface oferece três temas (shadcn por padrão, Material Design 3 e Liquid Glass da Apple) e o modelo de configuração é o YAML nativo do Mihomo. O painel está disponível em 11 idiomas.
 
 > [!IMPORTANT]
 > Use este projeto apenas em servidores e redes que sejam seus ou que você tenha autorização para administrar. Respeite a legislação local, os termos dos seus provedores e as políticas dos serviços que você acessa.
 
 A documentação completa está na [Wiki do m-ui](https://github.com/RomanovCaesar/m-ui/wiki) (em inglês). Acompanhe as novidades do desenvolvimento no nosso [canal do Telegram](https://t.me/MihomoUI).
+
+<p align="center">
+  <img src="./media/screenshots/en/inbounds.png" alt="Inbounds e clientes" width="900">
+</p>
 
 ## Recursos
 
@@ -52,6 +56,15 @@ A documentação completa está na [Wiki do m-ui](https://github.com/RomanovCaes
 * Sincronização criptografada de entradas entre painéis confiáveis
 * Agregação de assinaturas entre painéis
 * Dispositivos cliente: o [Clash Caesar](https://github.com/RomanovCaesar/clash-caesar) importa o arquivo de rede, entra uma vez com a conta de administrador do painel e então vê todos os painéis e obtém a assinatura de qualquer painel ou a combinada por qualquer painel alcançável
+
+## Capturas de tela
+
+<table>
+  <tr><td width="50%"><img src="./media/screenshots/en/dashboard.png" alt="Visão geral"><br><sub>Visão geral</sub></td><td width="50%"><img src="./media/screenshots/en/client-edit.png" alt="Cliente: cota, expiração, redefinição de tráfego e renovação automática"><br><sub>Cliente: cota, expiração, redefinição de tráfego e renovação automática</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/outbounds.png" alt="Outbounds e grupos de proxy"><br><sub>Outbounds e grupos de proxy</sub></td><td width="50%"><img src="./media/screenshots/en/routing.png" alt="Regras de roteamento"><br><sub>Regras de roteamento</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/xray-import.png" alt="Importar do Xray / 3x-ui"><br><sub>Importar do Xray / 3x-ui</sub></td><td width="50%"><img src="./media/screenshots/en/theme-shadcn-dark.png" alt="Tema shadcn, escuro"><br><sub>Tema shadcn, escuro</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/theme-md3.png" alt="Tema Material Design 3"><br><sub>Tema Material Design 3</sub></td><td width="50%"><img src="./media/screenshots/en/theme-liquid.png" alt="Tema Liquid Glass"><br><sub>Tema Liquid Glass</sub></td></tr>
+</table>
 
 ## Instalação no Linux
 
@@ -149,6 +162,7 @@ Valide com `go test ./...` e `go vet ./...`. A versão é injetada com `-X main.
 * [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui): densidade da interface e fluxo de trabalho
 * [Sub-Store](https://github.com/sub-store-org/Sub-Store): comportamento de referência dos formatos de assinatura
 * [liquid-glass-webgl](https://github.com/martin65536/liquid-glass-webgl): os controles Liquid Glass (Apache-2.0, veja [`NOTICE`](NOTICE))
+* Ícones [Lucide](https://lucide.dev) e [Material Symbols](https://github.com/google/material-design-icons), fontes [Geist](https://github.com/vercel/geist-font) e [Roboto](https://github.com/googlefonts/roboto-classic): os temas shadcn e Material Design 3 (ISC, Apache-2.0 e OFL-1.1, veja [`NOTICE`](NOTICE))
 
 ## Licença
 

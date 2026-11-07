@@ -12,12 +12,16 @@
 [![Downloads](https://img.shields.io/github/downloads/RomanovCaesar/m-ui/total.svg)](https://github.com/RomanovCaesar/m-ui/releases/latest)
 [![License](https://img.shields.io/github/license/RomanovCaesar/m-ui.svg)](https://github.com/RomanovCaesar/m-ui/blob/main/LICENSE)
 
-[Mihomo](https://github.com/MetaCubeX/mihomo) çekirdeğini kullanan bir sunucu yönetim paneli. İş akışı 3x-ui'ye, arayüzü Apple'ın Liquid Glass tasarımına, yapılandırma modeli ise Mihomo'nun yerel YAML biçimine dayanır. Panel 11 dilde kullanılabilir.
+[Mihomo](https://github.com/MetaCubeX/mihomo) çekirdeğini kullanan bir sunucu yönetim paneli. İş akışı 3x-ui'ye, arayüzü üç temaya (varsayılan shadcn, Material Design 3 ve Apple'ın Liquid Glass tasarımı), yapılandırma modeli ise Mihomo'nun yerel YAML biçimine dayanır. Panel 11 dilde kullanılabilir.
 
 > [!IMPORTANT]
 > Bu projeyi yalnızca sahibi olduğunuz veya yönetme yetkiniz bulunan sunucu ve ağlarda kullanın. Yerel yasalara, sağlayıcı koşullarına ve eriştiğiniz hizmetlerin politikalarına uyun.
 
 Tüm belgeler [m-ui Wiki](https://github.com/RomanovCaesar/m-ui/wiki) sayfasındadır (İngilizce). Geliştirme haberleri için [Telegram kanalımızı](https://t.me/MihomoUI) takip edin.
+
+<p align="center">
+  <img src="./media/screenshots/en/inbounds.png" alt="Inbound'lar ve istemciler" width="900">
+</p>
 
 ## Özellikler
 
@@ -52,6 +56,15 @@ Tüm belgeler [m-ui Wiki](https://github.com/RomanovCaesar/m-ui/wiki) sayfasınd
 * Güvenilen paneller arasında şifreli giriş eşitleme
 * Paneller arası abonelik birleştirme
 * İstemci cihazlar: [Clash Caesar](https://github.com/RomanovCaesar/clash-caesar) ağ dosyasını içe aktarır, panel yönetici hesabıyla bir kez oturum açar; ardından tüm panelleri görür ve erişebildiği herhangi bir panel üzerinden her panelin veya birleşik aboneliği alır
+
+## Ekran görüntüleri
+
+<table>
+  <tr><td width="50%"><img src="./media/screenshots/en/dashboard.png" alt="Genel bakış"><br><sub>Genel bakış</sub></td><td width="50%"><img src="./media/screenshots/en/client-edit.png" alt="İstemci: kota, bitiş tarihi, trafik sıfırlama ve otomatik yenileme"><br><sub>İstemci: kota, bitiş tarihi, trafik sıfırlama ve otomatik yenileme</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/outbounds.png" alt="Outbound'lar ve proxy grupları"><br><sub>Outbound'lar ve proxy grupları</sub></td><td width="50%"><img src="./media/screenshots/en/routing.png" alt="Yönlendirme kuralları"><br><sub>Yönlendirme kuralları</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/xray-import.png" alt="Xray / 3x-ui'den içe aktarma"><br><sub>Xray / 3x-ui'den içe aktarma</sub></td><td width="50%"><img src="./media/screenshots/en/theme-shadcn-dark.png" alt="shadcn teması, koyu"><br><sub>shadcn teması, koyu</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/theme-md3.png" alt="Material Design 3 teması"><br><sub>Material Design 3 teması</sub></td><td width="50%"><img src="./media/screenshots/en/theme-liquid.png" alt="Liquid Glass teması"><br><sub>Liquid Glass teması</sub></td></tr>
+</table>
 
 ## Linux kurulumu
 
@@ -149,6 +162,7 @@ Windows ve Linux amd64 ikili dosyalarını ya da tüm sürüm arşivlerini derle
 * [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui): arayüz yoğunluğu ve iş akışı
 * [Sub-Store](https://github.com/sub-store-org/Sub-Store): istemci abonelik biçimleri için başvuru davranışı
 * [liquid-glass-webgl](https://github.com/martin65536/liquid-glass-webgl): Liquid Glass denetimleri (Apache-2.0, bkz. [`NOTICE`](NOTICE))
+* [Lucide](https://lucide.dev) ve [Material Symbols](https://github.com/google/material-design-icons) simgeleri, [Geist](https://github.com/vercel/geist-font) ve [Roboto](https://github.com/googlefonts/roboto-classic) yazı tipleri: shadcn ve Material Design 3 temaları (ISC, Apache-2.0 ve OFL-1.1, bkz. [`NOTICE`](NOTICE))
 
 ## Lisans
 

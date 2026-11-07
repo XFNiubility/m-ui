@@ -37,10 +37,10 @@
   function millis(value){return value?new Date(value).toLocaleString():'—';}
   function renderDevices(){
     $('#mc-device-list').innerHTML=devices.length?`<div class="mc-table-wrap"><table class="mc-peer-table"><thead><tr><th>${muiT('mc.colDevice')}</th><th>${muiT('mc.colIssuer')}</th><th>${muiT('mc.colStatus')}</th><th>${muiT('mc.colLastSeen')}</th><th>${muiT('mc.colActions')}</th></tr></thead><tbody>${devices.map(device=>`<tr><td>${esc(device.name)}<small>${esc(device.id)}</small></td><td>${esc(nodeName(device.issuer))}</td><td><span class="mc-status ${device.revoked?'':'online'}">${device.revoked?muiT('mc.revoked'):muiT('mc.deviceActive')}</span></td><td>${esc(millis(device.lastSeen))}</td><td>${device.revoked?'':`<button type="button" class="danger-btn" data-mc-revoke="${esc(device.id)}">${muiT('mc.revoke')}</button>`}</td></tr>`).join('')}</tbody></table></div>`:`<div class="mc-empty">${muiT('mc.emptyDevices')}</div>`;
-    for(const button of $('[data-mc-revoke]',devicesModal))button.onclick=()=>revokeDevice(button.dataset.mcRevoke);
+    for(const button of $$('[data-mc-revoke]',devicesModal))button.onclick=()=>revokeDevice(button.dataset.mcRevoke);
   }
   async function loadDevices(){devices=await api('/api/client-mesh/devices');renderDevices();}
-  function revokeDevice(id){if(!confirm(muiT('mc.confirmRevoke')))return;run(devicesModal,async()=>{devices=await api('/api/client-mesh/devices/revoke',{method:'POST',body:JSON.stringify({id})});renderDevices();});}
+  async function revokeDevice(id){if(!await muiConfirm(muiT('mc.confirmRevoke'),{danger:true}))return;run(devicesModal,async()=>{devices=await api('/api/client-mesh/devices/revoke',{method:'POST',body:JSON.stringify({id})});renderDevices();});}
   async function downloadClientFile(){
     const response=await fetch('api/client-mesh/file',{credentials:'same-origin'});
     if(!response.ok){let message=response.statusText;try{message=(await response.json()).message||message;}catch{}throw new Error(message);}
@@ -97,7 +97,7 @@
   $('#mc-add-toggle').onclick=()=>{$('#mc-connect-form').hidden=!$('#mc-connect-form').hidden;};
   $('#mc-refresh').onclick=()=>run(connectionsModal,async()=>{await api('/api/multi-control/sync',{method:'POST'});state=await api('/api/multi-control');render();});
   $('#mc-connect-form').onsubmit=event=>{event.preventDefault();const form=event.currentTarget;run(connectionsModal,async()=>{await saveLocal();const data=Object.fromEntries(new FormData(form));data.port=Number(data.port);state=await api('/api/multi-control/connect',{method:'POST',body:JSON.stringify(data)});form.elements.token.value='';form.hidden=true;render();});};
-  function disconnect(id){if(!confirm(muiT('mc.confirmDisconnect')))return;run(connectionsModal,async()=>{state=await api('/api/multi-control/disconnect',{method:'POST',body:JSON.stringify({id})});render();});}
+  async function disconnect(id){if(!await muiConfirm(muiT('mc.confirmDisconnect'),{danger:true}))return;run(connectionsModal,async()=>{state=await api('/api/multi-control/disconnect',{method:'POST',body:JSON.stringify({id})});render();});}
   for(const modal of [tokenModal,connectionsModal,devicesModal]){
     $('[data-mc-close]',modal).onclick=()=>{if(!busy)closeModal(modal);};modal.onclick=event=>{if(event.target===modal&&!busy)closeModal(modal);};
   }

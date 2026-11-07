@@ -12,12 +12,16 @@
 [![Downloads](https://img.shields.io/github/downloads/RomanovCaesar/m-ui/total.svg)](https://github.com/RomanovCaesar/m-ui/releases/latest)
 [![License](https://img.shields.io/github/license/RomanovCaesar/m-ui.svg)](https://github.com/RomanovCaesar/m-ui/blob/main/LICENSE)
 
-一個以 [Mihomo](https://github.com/MetaCubeX/mihomo) 為核心的伺服器管理面板。操作流程參考 3x-ui，介面採用 Apple 液態玻璃（Liquid Glass）設計，設定模型使用 Mihomo 原生 YAML。面板支援 11 種語言。
+一個以 [Mihomo](https://github.com/MetaCubeX/mihomo) 為核心的伺服器管理面板。操作流程參考 3x-ui，介面提供 shadcn（預設）、Material Design 3 和 Apple 液態玻璃（Liquid Glass）三種主題，設定模型使用 Mihomo 原生 YAML。面板支援 11 種語言。
 
 > [!IMPORTANT]
 > 本專案只應用於您擁有或獲授權管理的伺服器和網路。請遵守所在地法律、上游服務商條款，以及您所存取服務的使用政策。
 
 完整文件請參閱 [m-ui Wiki](https://github.com/RomanovCaesar/m-ui/wiki/Home.zh_CN)（簡體中文）。也歡迎關注我們的 [Telegram 頻道](https://t.me/MihomoUI) 取得開發動態。
+
+<p align="center">
+  <img src="./media/screenshots/inbounds.png" alt="入站與用戶端" width="900">
+</p>
 
 ## 功能
 
@@ -52,6 +56,15 @@
 * 在受信任的面板之間加密同步 Inbound
 * 跨面板訂閱聚合
 * 用戶端裝置：[Clash Caesar](https://github.com/RomanovCaesar/clash-caesar) 匯入外掛檔案、用面板管理員帳號登入一次，即可查看網路裡所有面板的在線情況，並透過任一個能連上的面板拉取各面板訂閱或融合訂閱
+
+## 截圖
+
+<table>
+  <tr><td width="50%"><img src="./media/screenshots/dashboard.png" alt="儀表板"><br><sub>儀表板</sub></td><td width="50%"><img src="./media/screenshots/client-edit.png" alt="用戶端：配額、到期、流量重置與自動續期"><br><sub>用戶端：配額、到期、流量重置與自動續期</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/outbounds.png" alt="出站與策略組"><br><sub>出站與策略組</sub></td><td width="50%"><img src="./media/screenshots/routing.png" alt="分流規則"><br><sub>分流規則</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/xray-import.png" alt="從 Xray / 3x-ui 匯入"><br><sub>從 Xray / 3x-ui 匯入</sub></td><td width="50%"><img src="./media/screenshots/theme-shadcn-dark.png" alt="shadcn 主題（深色）"><br><sub>shadcn 主題（深色）</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/theme-md3.png" alt="Material Design 3 主題"><br><sub>Material Design 3 主題</sub></td><td width="50%"><img src="./media/screenshots/theme-liquid.png" alt="液態玻璃主題"><br><sub>液態玻璃主題</sub></td></tr>
+</table>
 
 ## Linux 安裝
 
@@ -149,6 +162,7 @@ m-ui --lang <code>    menu language, e.g. m-ui --lang zh-tw
 * [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui)：介面資訊密度與操作流程
 * [Sub-Store](https://github.com/sub-store-org/Sub-Store)：用戶端訂閱格式的參考實作
 * [liquid-glass-webgl](https://github.com/martin65536/liquid-glass-webgl)：液態玻璃控制項（Apache-2.0，見 [`NOTICE`](NOTICE)）
+* [Lucide](https://lucide.dev) 與 [Material Symbols](https://github.com/google/material-design-icons) 圖示、[Geist](https://github.com/vercel/geist-font) 與 [Roboto](https://github.com/googlefonts/roboto-classic) 字型：shadcn 和 Material Design 3 主題（ISC、Apache-2.0、OFL-1.1，見 [`NOTICE`](NOTICE)）
 
 ## 授權
 

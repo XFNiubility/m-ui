@@ -14,12 +14,16 @@
 [![Downloads](https://img.shields.io/github/downloads/RomanovCaesar/m-ui/total.svg)](https://github.com/RomanovCaesar/m-ui/releases/latest)
 [![License](https://img.shields.io/github/license/RomanovCaesar/m-ui.svg)](https://github.com/RomanovCaesar/m-ui/blob/main/LICENSE)
 
-یک پنل مدیریت سرور بر پایهٔ هستهٔ [Mihomo](https://github.com/MetaCubeX/mihomo). روند کار آن از 3x-ui، رابط کاربری آن از طراحی Liquid Glass اپل و مدل پیکربندی آن از YAML بومی Mihomo پیروی می‌کند. پنل به ۱۱ زبان در دسترس است.
+یک پنل مدیریت سرور بر پایهٔ هستهٔ [Mihomo](https://github.com/MetaCubeX/mihomo). روند کار آن از 3x-ui، رابط کاربری آن در سه پوسته (پیش‌فرض shadcn، Material Design 3 و Liquid Glass اپل) ارائه می‌شود و و مدل پیکربندی آن از YAML بومی Mihomo پیروی می‌کند. پنل به ۱۱ زبان در دسترس است.
 
 > [!IMPORTANT]
 > این پروژه را فقط روی سرورها و شبکه‌هایی به کار ببرید که مالک آن‌ها هستید یا اجازهٔ مدیریتشان را دارید. قوانین محلی، شرایط ارائه‌دهندگان و سیاست‌های سرویس‌هایی را که به آن‌ها دسترسی دارید رعایت کنید.
 
 مستندات کامل در [ویکی m-ui](https://github.com/RomanovCaesar/m-ui/wiki) (به انگلیسی) است. برای اخبار توسعه، [کانال تلگرام](https://t.me/MihomoUI) ما را دنبال کنید.
+
+<p align="center">
+  <img src="./media/screenshots/en/inbounds.png" alt="Inboundها و کلاینت‌ها" width="900">
+</p>
 
 ## امکانات
 
@@ -54,6 +58,15 @@
 * همگام‌سازی رمزگذاری‌شدهٔ ورودی‌ها میان پنل‌های مورد اعتماد
 * تجمیع اشتراک‌ها از چند پنل
 * دستگاه‌های کلاینت: [Clash Caesar](https://github.com/RomanovCaesar/clash-caesar) فایل شبکه را وارد می‌کند، یک بار با حساب مدیر پنل وارد می‌شود و سپس همهٔ پنل‌ها را می‌بیند و اشتراک هر پنل یا اشتراک ادغام‌شده را از هر پنل در دسترس دریافت می‌کند
+
+## تصاویر
+
+<table>
+  <tr><td width="50%"><img src="./media/screenshots/en/dashboard.png" alt="نمای کلی"><br><sub>نمای کلی</sub></td><td width="50%"><img src="./media/screenshots/en/client-edit.png" alt="کلاینت: سهمیه، انقضا، بازنشانی ترافیک و تمدید خودکار"><br><sub>کلاینت: سهمیه، انقضا، بازنشانی ترافیک و تمدید خودکار</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/outbounds.png" alt="Outboundها و گروه‌های پراکسی"><br><sub>Outboundها و گروه‌های پراکسی</sub></td><td width="50%"><img src="./media/screenshots/en/routing.png" alt="قوانین مسیریابی"><br><sub>قوانین مسیریابی</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/xray-import.png" alt="درون‌ریزی از Xray / 3x-ui"><br><sub>درون‌ریزی از Xray / 3x-ui</sub></td><td width="50%"><img src="./media/screenshots/en/theme-shadcn-dark.png" alt="پوسته shadcn، تیره"><br><sub>پوسته shadcn، تیره</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/theme-md3.png" alt="پوسته Material Design 3"><br><sub>پوسته Material Design 3</sub></td><td width="50%"><img src="./media/screenshots/en/theme-liquid.png" alt="پوسته Liquid Glass"><br><sub>پوسته Liquid Glass</sub></td></tr>
+</table>
 
 ## نصب روی لینوکس
 
@@ -163,6 +176,7 @@ m-ui --lang <code>    menu language, e.g. m-ui --lang fa
 * [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui): تراکم اطلاعات و روند کار رابط کاربری
 * [Sub-Store](https://github.com/sub-store-org/Sub-Store): رفتار مرجع برای قالب‌های اشتراک کلاینت‌ها
 * [liquid-glass-webgl](https://github.com/martin65536/liquid-glass-webgl): کنترل‌های Liquid Glass (Apache-2.0، نگاه کنید به [`NOTICE`](NOTICE))
+* آیکون‌های [Lucide](https://lucide.dev) و [Material Symbols](https://github.com/google/material-design-icons)، فونت‌های [Geist](https://github.com/vercel/geist-font) و [Roboto](https://github.com/googlefonts/roboto-classic): پوسته‌های shadcn و Material Design 3 (ISC، Apache-2.0 و OFL-1.1، نگاه کنید به [`NOTICE`](NOTICE))
 
 ## مجوز
 

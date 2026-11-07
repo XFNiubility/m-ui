@@ -12,12 +12,16 @@
 [![Downloads](https://img.shields.io/github/downloads/RomanovCaesar/m-ui/total.svg)](https://github.com/RomanovCaesar/m-ui/releases/latest)
 [![License](https://img.shields.io/github/license/RomanovCaesar/m-ui.svg)](https://github.com/RomanovCaesar/m-ui/blob/main/LICENSE)
 
-[Mihomo](https://github.com/MetaCubeX/mihomo) をコアとするサーバー管理パネルです。操作の流れは 3x-ui、画面デザインは Apple の Liquid Glass、設定モデルは Mihomo ネイティブの YAML に基づいています。パネルは 11 言語に対応しています。
+[Mihomo](https://github.com/MetaCubeX/mihomo) をコアとするサーバー管理パネルです。操作の流れは 3x-ui、画面デザインは shadcn（既定）、Material Design 3、Apple の Liquid Glass の 3 つのテーマから選べ、設定モデルは Mihomo ネイティブの YAML に基づいています。パネルは 11 言語に対応しています。
 
 > [!IMPORTANT]
 > 本プロジェクトは、ご自身が所有する、または管理を許可されたサーバーとネットワークでのみ使用してください。現地の法律、上流プロバイダーの規約、利用するサービスのポリシーを守ってください。
 
 詳しいドキュメントは [m-ui Wiki](https://github.com/RomanovCaesar/m-ui/wiki)（英語）をご覧ください。開発情報は [Telegram チャンネル](https://t.me/MihomoUI) でお知らせしています。
+
+<p align="center">
+  <img src="./media/screenshots/en/inbounds.png" alt="インバウンドとクライアント" width="900">
+</p>
 
 ## 機能
 
@@ -52,6 +56,15 @@
 * 信頼したパネル間での暗号化されたインバウンド同期
 * パネル間サブスクリプションの集約
 * クライアント端末：[Clash Caesar](https://github.com/RomanovCaesar/clash-caesar) でネットワークファイルを読み込み、パネル管理者アカウントで一度ログインすれば、全パネルの状態を確認し、接続できる任意のパネル経由で各パネルまたは統合サブスクリプションを取得可能
+
+## スクリーンショット
+
+<table>
+  <tr><td width="50%"><img src="./media/screenshots/en/dashboard.png" alt="ダッシュボード"><br><sub>ダッシュボード</sub></td><td width="50%"><img src="./media/screenshots/en/client-edit.png" alt="クライアント：容量・有効期限・トラフィックリセット・自動更新"><br><sub>クライアント：容量・有効期限・トラフィックリセット・自動更新</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/outbounds.png" alt="アウトバウンドとプロキシグループ"><br><sub>アウトバウンドとプロキシグループ</sub></td><td width="50%"><img src="./media/screenshots/en/routing.png" alt="ルーティングルール"><br><sub>ルーティングルール</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/xray-import.png" alt="Xray / 3x-ui からのインポート"><br><sub>Xray / 3x-ui からのインポート</sub></td><td width="50%"><img src="./media/screenshots/en/theme-shadcn-dark.png" alt="shadcn テーマ（ダーク）"><br><sub>shadcn テーマ（ダーク）</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/theme-md3.png" alt="Material Design 3 テーマ"><br><sub>Material Design 3 テーマ</sub></td><td width="50%"><img src="./media/screenshots/en/theme-liquid.png" alt="Liquid Glass テーマ"><br><sub>Liquid Glass テーマ</sub></td></tr>
+</table>
 
 ## Linux へのインストール
 
@@ -149,6 +162,7 @@ Windows と Linux amd64 のバイナリ、またはすべてのリリースア�
 * [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui)：画面の情報密度と操作の流れ
 * [Sub-Store](https://github.com/sub-store-org/Sub-Store)：クライアント向けサブスクリプション形式の参考実装
 * [liquid-glass-webgl](https://github.com/martin65536/liquid-glass-webgl)：Liquid Glass コントロール（Apache-2.0、[`NOTICE`](NOTICE) を参照）
+* [Lucide](https://lucide.dev) と [Material Symbols](https://github.com/google/material-design-icons) のアイコン、[Geist](https://github.com/vercel/geist-font) と [Roboto](https://github.com/googlefonts/roboto-classic) のフォント：shadcn と Material Design 3 テーマ（ISC、Apache-2.0、OFL-1.1、[`NOTICE`](NOTICE) を参照）
 
 ## ライセンス
 

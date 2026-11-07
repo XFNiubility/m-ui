@@ -12,12 +12,16 @@
 [![Downloads](https://img.shields.io/github/downloads/RomanovCaesar/m-ui/total.svg)](https://github.com/RomanovCaesar/m-ui/releases/latest)
 [![License](https://img.shields.io/github/license/RomanovCaesar/m-ui.svg)](https://github.com/RomanovCaesar/m-ui/blob/main/LICENSE)
 
-Bảng điều khiển quản lý máy chủ dùng [Mihomo](https://github.com/MetaCubeX/mihomo) làm lõi. Cách thao tác theo 3x-ui, giao diện theo phong cách Liquid Glass của Apple, còn mô hình cấu hình là YAML gốc của Mihomo. Bảng điều khiển hỗ trợ 11 ngôn ngữ.
+Bảng điều khiển quản lý máy chủ dùng [Mihomo](https://github.com/MetaCubeX/mihomo) làm lõi. Cách thao tác theo 3x-ui, giao diện có ba chủ đề (mặc định là shadcn, Material Design 3 và Liquid Glass của Apple), còn mô hình cấu hình là YAML gốc của Mihomo. Bảng điều khiển hỗ trợ 11 ngôn ngữ.
 
 > [!IMPORTANT]
 > Chỉ sử dụng dự án này trên máy chủ và mạng mà bạn sở hữu hoặc được phép quản trị. Hãy tuân thủ luật pháp sở tại, điều khoản của nhà cung cấp và chính sách của các dịch vụ bạn truy cập.
 
 Tài liệu đầy đủ có tại [m-ui Wiki](https://github.com/RomanovCaesar/m-ui/wiki) (tiếng Anh). Theo dõi [kênh Telegram](https://t.me/MihomoUI) để nhận tin tức phát triển.
+
+<p align="center">
+  <img src="./media/screenshots/en/inbounds.png" alt="Inbound và client" width="900">
+</p>
 
 ## Tính năng
 
@@ -52,6 +56,15 @@ Tài liệu đầy đủ có tại [m-ui Wiki](https://github.com/RomanovCaesar/
 * Đồng bộ inbound được mã hóa giữa các bảng điều khiển tin cậy
 * Gộp đăng ký từ nhiều bảng điều khiển
 * Thiết bị khách: [Clash Caesar](https://github.com/RomanovCaesar/clash-caesar) nhập tệp mạng, đăng nhập một lần bằng tài khoản quản trị panel, sau đó xem được mọi panel và lấy subscription của từng panel hoặc subscription hợp nhất qua bất kỳ panel nào kết nối được
+
+## Ảnh chụp màn hình
+
+<table>
+  <tr><td width="50%"><img src="./media/screenshots/en/dashboard.png" alt="Tổng quan"><br><sub>Tổng quan</sub></td><td width="50%"><img src="./media/screenshots/en/client-edit.png" alt="Client: hạn mức, hết hạn, đặt lại lưu lượng và tự động gia hạn"><br><sub>Client: hạn mức, hết hạn, đặt lại lưu lượng và tự động gia hạn</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/outbounds.png" alt="Outbound và nhóm proxy"><br><sub>Outbound và nhóm proxy</sub></td><td width="50%"><img src="./media/screenshots/en/routing.png" alt="Quy tắc định tuyến"><br><sub>Quy tắc định tuyến</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/xray-import.png" alt="Nhập từ Xray / 3x-ui"><br><sub>Nhập từ Xray / 3x-ui</sub></td><td width="50%"><img src="./media/screenshots/en/theme-shadcn-dark.png" alt="Giao diện shadcn, tối"><br><sub>Giao diện shadcn, tối</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/theme-md3.png" alt="Giao diện Material Design 3"><br><sub>Giao diện Material Design 3</sub></td><td width="50%"><img src="./media/screenshots/en/theme-liquid.png" alt="Giao diện Liquid Glass"><br><sub>Giao diện Liquid Glass</sub></td></tr>
+</table>
 
 ## Cài đặt trên Linux
 
@@ -149,6 +162,7 @@ Kiểm tra bằng `go test ./...` và `go vet ./...`. Phiên bản được chè
 * [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui): mật độ thông tin và cách thao tác của giao diện
 * [Sub-Store](https://github.com/sub-store-org/Sub-Store): hành vi tham chiếu cho các định dạng đăng ký
 * [liquid-glass-webgl](https://github.com/martin65536/liquid-glass-webgl): các điều khiển Liquid Glass (Apache-2.0, xem [`NOTICE`](NOTICE))
+* Biểu tượng [Lucide](https://lucide.dev) và [Material Symbols](https://github.com/google/material-design-icons), phông chữ [Geist](https://github.com/vercel/geist-font) và [Roboto](https://github.com/googlefonts/roboto-classic): chủ đề shadcn và Material Design 3 (ISC, Apache-2.0 và OFL-1.1, xem [`NOTICE`](NOTICE))
 
 ## Giấy phép
 

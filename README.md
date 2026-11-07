@@ -12,12 +12,16 @@
 [![Downloads](https://img.shields.io/github/downloads/RomanovCaesar/m-ui/total.svg)](https://github.com/RomanovCaesar/m-ui/releases/latest)
 [![License](https://img.shields.io/github/license/RomanovCaesar/m-ui.svg)](https://github.com/RomanovCaesar/m-ui/blob/main/LICENSE)
 
-A server management panel powered by [Mihomo](https://github.com/MetaCubeX/mihomo). Its workflow follows 3x-ui, its interface follows Apple's Liquid Glass design, and its configuration model is Mihomo's native YAML. The panel is available in 11 languages.
+A server management panel powered by [Mihomo](https://github.com/MetaCubeX/mihomo). Its workflow follows 3x-ui, its interface comes in three themes (shadcn by default, Material Design 3 and Apple's Liquid Glass), and its configuration model is Mihomo's native YAML. The panel is available in 11 languages.
 
 > [!IMPORTANT]
 > Use this project only on servers and networks that you own or are authorized to administer. Follow local law, upstream provider terms, and the policies of the services you access.
 
 For complete documentation, visit the [m-ui Wiki](https://github.com/RomanovCaesar/m-ui/wiki). Subscribe to our [Telegram channel](https://t.me/MihomoUI) for development news.
+
+<p align="center">
+  <img src="./media/screenshots/en/inbounds.png" alt="Inbounds and clients" width="900">
+</p>
 
 ## Features
 
@@ -52,6 +56,15 @@ For complete documentation, visit the [m-ui Wiki](https://github.com/RomanovCaes
 * Encrypted inbound synchronization between trusted panels
 * Cross-panel subscription aggregation
 * Client devices: [Clash Caesar](https://github.com/RomanovCaesar/clash-caesar) imports the network file, signs in once with the panel admin account, and can then see every panel and pull any panel's or the merged subscription through whichever panel it can reach
+
+## Screenshots
+
+<table>
+  <tr><td width="50%"><img src="./media/screenshots/en/dashboard.png" alt="Overview"><br><sub>Overview</sub></td><td width="50%"><img src="./media/screenshots/en/client-edit.png" alt="Client: quota, expiry, traffic reset and auto-renewal"><br><sub>Client: quota, expiry, traffic reset and auto-renewal</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/outbounds.png" alt="Outbounds and proxy groups"><br><sub>Outbounds and proxy groups</sub></td><td width="50%"><img src="./media/screenshots/en/routing.png" alt="Routing rules"><br><sub>Routing rules</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/xray-import.png" alt="Import from Xray / 3x-ui"><br><sub>Import from Xray / 3x-ui</sub></td><td width="50%"><img src="./media/screenshots/en/theme-shadcn-dark.png" alt="shadcn theme, dark"><br><sub>shadcn theme, dark</sub></td></tr>
+  <tr><td width="50%"><img src="./media/screenshots/en/theme-md3.png" alt="Material Design 3 theme"><br><sub>Material Design 3 theme</sub></td><td width="50%"><img src="./media/screenshots/en/theme-liquid.png" alt="Liquid Glass theme"><br><sub>Liquid Glass theme</sub></td></tr>
+</table>
 
 ## Linux installation
 
@@ -147,6 +160,7 @@ Validate with `go test ./...` and `go vet ./...`. The version is injected with `
 * [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui): interface density and workflow
 * [Sub-Store](https://github.com/sub-store-org/Sub-Store): reference behavior for client subscription formats
 * [liquid-glass-webgl](https://github.com/martin65536/liquid-glass-webgl): the Liquid Glass controls (Apache-2.0, see [`NOTICE`](NOTICE))
+* [Lucide](https://lucide.dev) and [Material Symbols](https://github.com/google/material-design-icons) icons, [Geist](https://github.com/vercel/geist-font) and [Roboto](https://github.com/googlefonts/roboto-classic) fonts: the shadcn and Material Design 3 themes (ISC, Apache-2.0 and OFL-1.1, see [`NOTICE`](NOTICE))
 
 ## License
 
